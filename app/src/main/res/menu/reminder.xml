@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_arlarm"
+        android:title="Nhắc nhở"
+        android:icon="@drawable/ic_alarm"/>
+    <item
+        android:id="@+id/item_gmail"
+        android:icon="@drawable/gmail"
+        android:title="Gmail" />
+    <item
+        android:id="@+id/item_screen"
+        android:icon="@drawable/iphone"
+        android:title="Chuyển vào m.hình" />
+
+</menu>

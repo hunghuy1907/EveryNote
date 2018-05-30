@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="50dp">
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_nameacount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên tài khoản:"
+        android:layout_alignParentStart="true"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <EditText
+        android:paddingRight="10dp"
+        android:id="@+id/edt_name_acount"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/txt_nameacount"
+        android:background="@drawable/shape_edittext" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/txt_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_name_acount"
+        android:text="Mât khảu:"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <EditText
+        android:paddingRight="10dp"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/txt_pass"
+        android:layout_alignStart="@+id/edt_name_acount"
+        android:background="@drawable/shape_edittext" />
+
+    <TextView
+        android:id="@+id/txt_show_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_password"
+        android:layout_below="@+id/edt_password"
+        android:text="hiển thị"
+        android:textColor="#1219ea"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt_confirm_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_pass"
+        android:layout_below="@+id/txt_show_pass"
+        android:layout_marginTop="12dp"
+        android:text="Nhập lại MK:"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <EditText
+        android:paddingRight="10dp"
+        android:layout_alignStart="@+id/edt_name_acount"
+        android:id="@+id/edt_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/txt_confirm_pass"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_edittext" />
+
+    <TextView
+        android:id="@+id/txt_show_confirm_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_confirm_password"
+        android:layout_below="@+id/edt_confirm_password"
+        android:text="hiển thị"
+        android:textColor="#1219ea"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/txt_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_show_confirm_pass"
+        android:layout_marginTop="14dp"
+        android:text="Chọn icon:"
+        android:textColor="#111111"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/img_choose_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/edt_confirm_password"
+        android:layout_below="@+id/txt_show_confirm_pass" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_show_gallery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edt_confirm_password"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/img_choose_icon"
+        android:background="@drawable/ic_menu_more" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txt_icon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout_gallary">
+
+        <Button
+            android:id="@+id/btn_add_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/img_choose_icon"
+            android:background="@drawable/ic_add" />
+
+        <Gallery
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:id="@+id/gallery_icon"
+            android:layout_below="@+id/txt_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Gallery>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_add_acount"
+        android:text="Tạo tài khoản"
+        android:layout_marginTop="125dp"
+        android:layout_below="@+id/img_choose_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

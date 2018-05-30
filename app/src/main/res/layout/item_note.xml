@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:id="@+id/item_note_relative"
+    android:background="@drawable/shape_edittext"
+    android:padding="5dp">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/txt_title_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#111111"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txt_content_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_title_note"
+        android:text="Content"
+        android:textColor="#111111"
+        android:textSize="18dp" />
+
+    <TextView
+        android:textColor="#4b4a4a"
+        android:id="@+id/txt_date_create_acount_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_content_note"
+        android:layout_alignParentEnd="true"
+        android:text="3/2/2018"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/img_pin"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_date_create_acount_note"
+        android:layout_alignStart="@+id/txt_date_create_acount_note"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/pin_black" />
+
+</RelativeLayout>

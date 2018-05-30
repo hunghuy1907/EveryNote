@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#aba8a8"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@drawable/shape_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:windowSoftInputMode="adjustNothing"
+            android:hint="Tìm kiếm"
+            android:textColor="#787474"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"
+            android:background="@android:drawable/ic_menu_search" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="8dp"
+        android:id="@+id/rcv_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/txt_first_text"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_edittext"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txt_first_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:text="Hãy tạo và lưu trữ ghi chú đầu tiên của bạn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#6b6a6a"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_create_note"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_add"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+</RelativeLayout>

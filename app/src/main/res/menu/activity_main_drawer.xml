@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Ghi chú chung">
+        <menu>
+            <item
+                android:id="@+id/nav_all_note"
+                android:title="Ghi chú văn bản" />
+            <item
+                android:id="@+id/nav_intro"
+                android:title="Ghi chú viết tay" />
+        </menu>
+    </item>
+
+
+    <item android:title="Tương tác">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Chia sẻ" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Phản hồi" />
+        </menu>
+    </item>
+
+</menu>

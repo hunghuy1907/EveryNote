@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#515264"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:text="Nhắc nhở"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_reminder"
+            android:paddingLeft="20dp"
+            android:background="@drawable/shape_dialog"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_alarm"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:textColor="#111111"
+                android:textSize="20dp"
+                android:text="Đặt nhắc nhở"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mail"
+            android:paddingLeft="20dp"
+            android:background="@drawable/shape_dialog"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:gravity="center_vertical"
+                android:background="@drawable/gmail"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:textColor="#111111"
+                android:textSize="20dp"
+                android:text="Gmail"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_move_to_screen"
+            android:paddingLeft="20dp"
+            android:background="@drawable/shape_dialog"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:gravity="center_vertical"
+                android:background="@drawable/iphone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:textColor="#111111"
+                android:textSize="20dp"
+                android:text="Chuyển vào màn hình"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/shape_dialog"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:textColor="#FFFFFF"
+                android:id="@+id/btn_huy_reminder"
+                android:background="#515264"
+                android:text="HỦY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
